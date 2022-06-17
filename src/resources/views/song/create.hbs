@@ -1,0 +1,28 @@
+<div class="mt-4 mb-4">
+    <h3>Đăng Bài Hát</h3>
+    {{!-- action tạo ra quy ước về tuyến đường mới do chúng ta tự tạo ra --}}
+    <form method="POST" action="/songs/store">
+        {{!-- name --}}
+        <div class="form-group">
+            <label for="name">Tên Bài Hát</label>
+            <input type="text" class="form-control" id="name" >
+        </div>
+        {{!-- Description --}}
+        <div class="form-group">
+            <label for="description">Mô Tả</label>
+            <input type="text" class="form-control" id="description" >
+        </div>
+        {{!-- videoId --}}
+        <div class="form-group">
+            <label for="videoId">videoId</label>
+            <input type="text" class="form-control" id="videoId" >
+        </div>
+        {{!-- level --}}
+        <div class="form-group">
+            <label for="kind">Thể Loại Nhạc</label>
+            <input type="text" class="form-control" id="kind" >
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Thêm Bài Hát</button>
+    </form>
+</div>

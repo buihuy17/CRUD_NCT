@@ -1,0 +1,67 @@
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">NCT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">NhacCuaToi <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item_kindOfMusic dropdown">
+          <a class="nav-link" href="#" id="kindOfMusic" ole="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bài Hát</a>
+          <div class="dropdown-menu" aria-labelledby="kindOfMusic" >
+            <a class="dropdown-item" href="#">Việt Nam</a>
+            <ul>
+              <li>
+                  <a href="">Rap Việt</a>
+                  <a href=""></a>
+              </li>
+              <li> 
+                <a href="">Remix Việt</a>
+              </li>
+              <li>
+                <a href="">Tiễn Chiến</a>
+              </li>
+              <li>
+                <a href="">Nhạc Trịnh</a>
+              </li>
+            </ul>
+            <a class="dropdown-item" href="#">Âu Mỹ</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Hàn Quốc</a>
+          </div>
+        </li>
+        {{!-- playlist --}}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Playlist
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Nhạc Trẻ</a>
+            <a class="dropdown-item" href="#">Nhạc Trữ Tình</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Nhạc Tiktok</a>
+          </div>
+        </li>
+      </ul>
+      {{!-- search --}}
+      <form class="form-inline my-2 my-lg-0 mr-4">
+        <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      {{!-- login --}}
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Đăng Nhập</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Đăng Kí</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  

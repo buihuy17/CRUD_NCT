@@ -1,0 +1,23 @@
+<div class="mt-4">
+    <form method="POST" action="">
+      {{!-- method: phương thức, action để biết submit ở đâu --}}
+  <div class="form-group">
+    <label for="search-input">Tìm Kiếm Bài Hát </label>
+    <input type="text" name="q" class="form-control" id="search-input"  placeholder="Tên bài hát....">
+   
+  </div>
+
+  {{!-- Select --}}
+  <div class="form-group">
+    <label for="search-input"> Thể Loại </label>
+    <select  name="the_loai" class="form-control" id="the_loai-input">
+      <option value="">Chọn Thể Loại....</option>
+      <option value="nhac_tre">Nhạc Trẻ</option>
+      <option value="nhac_tru_tinh">Nhạc Trữ Tình</option>
+    </select>
+   
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
