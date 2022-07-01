@@ -20,7 +20,17 @@ class SongController {
 
   //[POST]: /songs/store
   store(req, res, next){
-    console.log(req.body);
+    // const formData = req.body;
+    // //thêm trực tiếp field vào trong data
+    req.body;
+    const song = new Song(req.body);
+    song.save()
+      .then(() =>{
+        res.redirect('/');
+      })
+      .catch(error => {
+
+      });
   }
 }
 

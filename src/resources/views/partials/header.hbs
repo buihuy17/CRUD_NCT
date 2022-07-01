@@ -1,51 +1,25 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">NCT</a>
+    <a class="navbar-brand" href="/">NCT</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">NhacCuaToi <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item_kindOfMusic dropdown">
-          <a class="nav-link" href="#" id="kindOfMusic" ole="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bài Hát</a>
-          <div class="dropdown-menu" aria-labelledby="kindOfMusic" >
-            <a class="dropdown-item" href="#">Việt Nam</a>
-            <ul>
-              <li>
-                  <a href="">Rap Việt</a>
-                  <a href=""></a>
-              </li>
-              <li> 
-                <a href="">Remix Việt</a>
-              </li>
-              <li>
-                <a href="">Tiễn Chiến</a>
-              </li>
-              <li>
-                <a href="">Nhạc Trịnh</a>
-              </li>
-            </ul>
-            <a class="dropdown-item" href="#">Âu Mỹ</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Hàn Quốc</a>
-          </div>
-        </li>
-        {{!-- playlist --}}
+          {{!-- Drop Down --}}
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Playlist
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Nhạc Trẻ</a>
-            <a class="dropdown-item" href="#">Nhạc Trữ Tình</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Nhạc Tiktok</a>
-          </div>
-        </li>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/279440113_386542790041253_4421500526010681956_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=TufgtxUM0IQAX91-UKb&_nc_ht=scontent.fhan15-2.fna&oh=00_AT_VNlmo7B2ETRWYPVt-2QZEkXyQYJ5TzxGadsnX1Jexug&oe=62C3F271" alt="" class="user-avatar">
+          Bùi Huy
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/songs/create">Thêm Bài Hát</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
       </ul>
       {{!-- search --}}
       <form class="form-inline my-2 my-lg-0 mr-4">
