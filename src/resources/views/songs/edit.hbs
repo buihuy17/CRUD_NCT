@@ -1,0 +1,33 @@
+<div class="mt-4 mb-4">
+    <h3>Cập Nhật Bài Hát</h3>
+    {{!-- action tạo ra quy ước về tuyến đường mới do chúng ta tự tạo ra --}}
+    <form class="mt-4" method="POST" action="/songs/{{song._id}}?_method=PUT">
+        {{!-- name --}}
+        <div class="form-group">
+            <label for="name">Tên Bài Hát</label>
+            <input type="text" class="form-control" value="{{song.name}}" id="name" name="name">
+        </div>
+        {{!-- Description --}}
+        <div class="form-group">
+            <label for="description">Mô Tả</label>
+            <textarea type="text" class="form-control" id="description" name="description">{{song.description}}</textarea>
+        </div>
+        {{!-- videoId --}}
+        <div class="form-group">
+            <label for="videoId">videoId</label>
+            <input type="text" class="form-control" value="{{song.videoId}}" id="videoId" name="videoId">
+        </div>
+        {{!-- image --}}
+        <div class="form-group">
+            <label for="image">image</label>
+            <input type="text" class="form-control" value="{{song.image}}" id="image" name="image">
+        </div>
+        {{!-- level --}}
+        <div class="form-group">
+            <label for="kind">Thể Loại Nhạc</label>
+            <input type="text" class="form-control" value="{{song.kind}}" id="kind" name="kind">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Lưu Lại</button>
+    </form>
+</div>

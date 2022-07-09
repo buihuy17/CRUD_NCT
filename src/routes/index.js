@@ -1,6 +1,7 @@
 const newsRouter = require("./news");
 const siteRouter = require("./site");
 const songRouter = require("./songs");
+const meRouter = require("./me");
 
 function route(app) {
   
@@ -14,6 +15,8 @@ function route(app) {
   //home+search
   app.use("/", siteRouter);
 
+  //me
+  app.use("/me",meRouter);
 }
 
 //nhớ export ra

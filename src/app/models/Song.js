@@ -4,7 +4,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 //add plug-in 
 const slug = require('mongoose-slug-generator');
-mongoose.plugin(slug);
+//import mongoose-delete
+const mongooseDelete = require('mongoose-delete');
+
+
+
 
 //define Songs
 const Song = new Schema({
@@ -22,5 +26,11 @@ const Song = new Schema({
       timestamps: true,
     }
   );
+
+  mongoose.plugin(slug); //cách add cho thư viện
+  Song.plugin(mongooseDelete, {
+    deletedAt : true,
+    overrideMethods: 'all',
+  }); //cách add vào Schema
 
 module.exports = mongoose.model('Song', Song);
